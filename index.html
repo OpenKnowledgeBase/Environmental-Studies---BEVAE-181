@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Studies MCQ Bank</title>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+   
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #f5f7fa, #c3cfe2);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            line-height: 1.8;
+        }
+    
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+    
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background: rgba(76, 175, 80, 0.6);
+            border-radius: 10px;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(76, 175, 80, 0.8);
+        }
+    
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid rgba(76, 175, 80, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+    
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: -1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+    
+        /* Sections */
+        .section {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    
+        h2 {
+            color: #4CAF50;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+    
+        /* Questions */
+        .question {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform-style: preserve-3d;
+        }
+    
+        .question:hover {
+            transform: rotateX(2deg) rotateY(2deg) translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    
+        .question p {
+            margin: 0 0 15px 0;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+    
+        .answer {
+            color: #4CAF50;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            display: block;
+            padding: 10px;
+            background: rgba(76, 175, 80, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+    
+        /* Icons */
+        .icon {
+            margin-right: 12px;
+            color: #4CAF50;
+            font-size: 1.4em;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+    
+        .icon:hover {
+            transform: scale(1.1);
+            color: #45a049;
+        }
+    
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 2px solid rgba(76, 175, 80, 0.3);
+        }
+    
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+    
+        /* Buttons */
+        .button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50;
+        }
+    
+        .button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+    
+        .button:active {
+            transform: translateY(0);
+        }
+    
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    
+        .progress {
+            height: 100%;
+            background: #4CAF50;
+            width: 0;
+            transition: width 0.5s ease;
+        }
+    
+        /* Tooltips */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted #4CAF50;
+            cursor: help;
+        }
+    
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        /* Confetti Animation */
+        @keyframes confetti {
+            0% { transform: translateY(0) rotate(0); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+    
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #4CAF50;
+            animation: confetti 2s linear infinite;
+        }
+    
+        /* Dark Mode */
+        body.dark-mode {
+            background: #1e1e1e;
+            color: #f5f7fa;
+        }
+    
+        .dark-mode .section {
+            background: rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+    
+        .dark-mode header, .dark-mode footer {
+            background: rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+    
+        .dark-mode .question {
+            background: rgba(0, 0, 0, 0.4);
+        }
+    
+        .dark-mode .answer {
+            background: rgba(76, 175, 80, 0.2);
+        }
+    
+        /* Loading Spinner */
+        .loader {
+            border: 4px solid #f5f7fa;
+            border-top: 4px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+    
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+    
+            h2 {
+                font-size: 1.8rem;
+            }
+    
+            .question p {
+                font-size: 1rem;
+            }
+    
+            .answer {
+                font-size: 1.1rem;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+    
+            h2 {
+                font-size: 1.5rem;
+            }
+    
+            .question {
+                padding: 20px;
+            }
+    
+            .question p {
+                font-size: 0.95rem;
+            }
+    
+            .answer {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-leaf icon"></i>Environmental Studies MCQ Bank</h1>
+    </header>
+
+    <div class="container">
+        <!-- MCQ Questions Section -->
+        <section class="section">
+            <h2><i class="fas fa-question-circle icon"></i>80 MCQ Questions</h2>
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. In which of the following more than 50% plant species in the reports/books was 'Sustainable Development' world? (a) Tropical Rain Forests (b) Tropical Deciduous Forests (c) Temperate Evergreen Forests (d) Temperate Deciduous Forests</p>
+                <p class="answer">Ans. (a) Tropical Rain Forests.</p>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. Which one of the following is not one of the seventeen Sustainable Development goals adopted by UN? (a) No Poverty (b) Zero Hunger (c) Good Health and Well-being (d) Tourism and Travel</p>
+                <p class="answer">Ans. (d) Tourism and Travel.</p>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. Which one of the following is an example of human modified environment? (a) Artificial lakes (b) Orchards (c) Crops fields (d) Dams</p>
+                <p class="answer">Ans. (d) Dams.</p>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. In which of the following do forests not play a significant role? (a) Soil formation (b) Water conservation (c) Regeneration of carbon dioxide (d) Moderation of climate</p>
+                <p class="answer">Ans. (c) Regeneration of carbon dioxide.</p>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. Which one of the following regions covers more than 50% plant species in the world? (a) Tropical Rain Forests (b) Tropical Deciduous Forests (c) Temperate Evergreen Forests (d) Temperate Deciduous Forests</p>
+                <p class="answer">Ans. (a) Tropical Rain Forests.</p>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. Crown fire mostly takes place in which of the following forests? (a) Dense Forest (b) Thorn Forest (c) Savanna Forest (d) Alpine Forest</p>
+                <p class="answer">Ans. (a) Dense Forest.</p>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. Communities residing near waste disposal sites receiving less economic benefits than the communities generating the waste represents? (a) Economic Inequity (b) Social Inequity (c) Procedural Inequity</p>
+                <p class="answer">Ans. (c) Procedural Inequity.</p>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. Which one of the following communities does not have a strong sense of stewardship? (a) Urban community (b) Tribal community (c) Traditional agricultural societies (d) Pastoral community</p>
+                <p class="answer">Ans. (a) Urban community.</p>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. Which of the following views considers nature as a mother and that she cannot be tamed? (a) European view (b) Indian view (c) Sineatic view (d) North American view</p>
+                <p class="answer">Ans. (b) Indian view.</p>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. The water cycle is driven by: (a) Global carbon cycle (b) Sun (c) Atmosphere (d) Hydrogen</p>
+                <p class="answer">Ans. (b) Sun.</p>
+            </div>
+            <!-- Question 11 -->
+            <div class="question">
+                <p>11. Chemosynthetic bacteria are: (a) Phagotrophs (b) Saprotrophs (c) Autotrophs (d) Heterotrophs</p>
+                <p class="answer">Ans. (c) Autotrophs.</p>
+            </div>
+            <!-- Question 12 -->
+            <div class="question">
+                <p>12. Life does not exist beyond......metres above mean sea level. (a) 6000 (b) 7000 (c) 8000 (d) 9000</p>
+                <p class="answer">Ans. (b) 7000.</p>
+            </div>
+            <!-- Question 13 -->
+            <div class="question">
+                <p>13. In an ecosystem, the decomposition of organisms takes place by? (a) Phagotrophs (b) Reducers (c) Primary Consumers (d) Secondary Consumers</p>
+                <p class="answer">Ans. (b) Reducers.</p>
+            </div>
+            <!-- Question 14 -->
+            <div class="question">
+                <p>14. The increase in population between 10,000 BC and about 1800 AD coincided with the: (a) Growth in agriculture (b) Industrial revolution (c) Large scale immigration (d) Decrease in death rate</p>
+                <p class="answer">Ans. (a) Growth in agriculture.</p>
+            </div>
+            <!-- Question 15 -->
+            <div class="question">
+                <p>15. During the 14th century more than half the population of Europe and Asia was killed due to: (a) Bubonic Plague (b) Malaria (c) The great fire (d) The great earthquake</p>
+                <p class="answer">Ans. (a) Bubonic Plague.</p>
+            </div>
+            <!-- Question 16 -->
+            <div class="question">
+                <p>16. Which one of the following is not a genetic disease? (a) Haemophilia (b) Sickle cell anemia (c) Malaria (d) Thalessemia</p>
+                <p class="answer">Ans. (c) Malaria.</p>
+            </div>
+            <!-- Question 17 -->
+            <div class="question">
+                <p>17. Match the types of environmental influences with their respective category. Environmental Influence: (a) Poison (b) Noise (c) Overcrowding (d) Allergens. Category: (i) Physical (ii) Sociological (iii) Biological (iv) Chemical</p>
+                <p class="answer">Ans. (2) a–iv, b–i, c–ii, d–iii.</p>
+            </div>
+            <!-- Question 18 -->
+            <div class="question">
+                <p>18. In a coniferous forest, the soil is: (a) Rich in mineral nutrients (b) Acidic and mineral deficient (c) Basic and mineral deficient (d) Moderately basic and rich in mineral nutrients</p>
+                <p class="answer">Ans. (b) Acidic and mineral deficient.</p>
+            </div>
+            <!-- Question 19 -->
+            <div class="question">
+                <p>19. The organisms which are attached to stems and leaves of rooted plants are known as: (a) Neuston (b) Plankton (c) Periphyton (d) Nekton</p>
+                <p class="answer">Ans. (c) Periphyton.</p>
+            </div>
+            <!-- Question 20 -->
+            <div class="question">
+                <p>20. In an ocean, the zone showing the maximum variability in terms of temperature, light, salinity and moisture is: (a) Littoral zone (b) Pelagic zone (c) Benthic zone (d) Neritic zone</p>
+                <p class="answer">Ans. (b) Pelagic zone.</p>
+            </div>
+            <!-- Question 21 -->
+            <div class="question">
+                <p>21. An estuary is a transitional zone representing: (a) A vast area of saline water (b) A large number of organisms (c) Great productivity built on a large base (d) Unique ecological features and biotic communities</p>
+                <p class="answer">Ans. (d) Unique ecological features and biotic communities.</p>
+            </div>
+            <!-- Question 22 -->
+            <div class="question">
+                <p>22. Which of the following is a major cause of deforestation? (a) Forest fires (b) Construction of dams (c) Shifting cultivation (d) Mining</p>
+                <p class="answer">Ans. (c) Shifting cultivation.</p>
+            </div>
+            <!-- Question 23 -->
+            <div class="question">
+                <p>23. Passenger pigeon is the perfect example of loss of species due to: (a) Habitat destruction (b) Poisoning by pesticides (c) Impact of climate change (d) Selective destruction for food</p>
+                <p class="answer">Ans. (a) Habitat destruction.</p>
+            </div>
+            <!-- Question 24 -->
+            <div class="question">
+                <p>24. The weed which causes enormous damage in fish and rice crop is: (a) Water hyacinth (b) Congress weed (c) Golden apple snail (d) Mesquite</p>
+                <p class="answer">Ans. (a) Water hyacinth.</p>
+            </div>
+            <!-- Question 25 -->
+            <div class="question">
+                <p>25. Artificial insemination has been useful for conservation of: (a) Snakes (b) Lizards (c) Elephants (d) Ducks</p>
+                <p class="answer">Ans. (d) Ducks.</p>
+            </div>
+            <!-- Question 26 -->
+            <div class="question">
+                <p>26. Which one of the following is not a major characteristic feature of biodiversity hotspot? (a) Large number of species (b) Abundance of endemic species (c) Species under constant threat (d) Large number of exotic species</p>
+                <p class="answer">Ans. (c) Species under constant threat.</p>
+            </div>
+            <!-- Question 27 -->
+            <div class="question">
+                <p>27. Which one of the following areas in India is a hotspot of biodiversity? (a) Sundarbans (b) Western Ghats (c) Eastern Ghats (d) Gangetic Plains</p>
+                <p class="answer">Ans. (b) Western Ghats.</p>
+            </div>
+            <!-- Question 28 -->
+            <div class="question">
+                <p>28. Which one of the following has the maximum genetic diversity in India? (a) Tea (b) Teak (c) Mango (d) Wheat</p>
+                <p class="answer">Ans. (c) Mango.</p>
+            </div>
+            <!-- Question 29 -->
+            <div class="question">
+                <p>29. Which of the following has maximum percentage of availability of water? (a) Rivers (b) Lakes (c) Atmospheric water (d) Ground water</p>
+                <p class="answer">Ans. (d) Ground water.</p>
+            </div>
+            <!-- Question 30 -->
+            <div class="question">
+                <p>30. Among the ecosystems mentioned below, where can one find maximum biodiversity? (a) Mangroves (b) Deserts (c) Coral reefs (d) Alpine meadows</p>
+                <p class="answer">Ans. (c) Coral reefs.</p>
+            </div>
+            <!-- Question 31 -->
+            <div class="question">
+                <p>31. How much water on the Earth is readily accessible for human use? (a) 0.5% (b) 1% (c) 2% (d) 3%</p>
+                <p class="answer">Ans. (a) 0.5%.</p>
+            </div>
+            <!-- Question 32 -->
+            <div class="question">
+                <p>32. The soil which is low in organic matter and has low fertility in India is: (a) Red soil (b) Soil with loamy texture and dry composition (c) Soil of desert region (d) Soil of Himalayan region</p>
+                <p class="answer">Ans. (c) Soil of desert region.</p>
+            </div>
+            <!-- Question 33 -->
+            <div class="question">
+                <p>33. Which of the following is not a practice used to prevent soil erosion? (a) Bunding (b) Kul (c) Mulching (d) Soil moisture conservation</p>
+                <p class="answer">Ans. (a) Bunding.</p>
+            </div>
+            <!-- Question 34 -->
+            <div class="question">
+                <p>34. Identify the conventional source of energy from the following: (a) Biomass (b) Geothermal (c) Wind (d) Atomic energy</p>
+                <p class="answer">Ans. (d) Atomic energy.</p>
+            </div>
+            <!-- Question 35 -->
+            <div class="question">
+                <p>35. A biomass gasifier converts: (a) Solid fuel to gaseous fuel (b) Gaseous fuel to solid fuel (c) Liquid fuel to gaseous fuel (d) Gaseous fuel to liquid fuel</p>
+                <p class="answer">Ans. (a) Solid fuel to gaseous fuel.</p>
+            </div>
+            <!-- Question 36 -->
+            <div class="question">
+                <p>36. The most suitable fuel for a fuel cell is: (a) Water (b) Nitrogen (c) Hydrogen (d) Carbon dioxide</p>
+                <p class="answer">Ans. (c) Hydrogen.</p>
+            </div>
+            <!-- Question 37 -->
+            <div class="question">
+                <p>37. The biophysical carrying capacity is......population that can be supported by the resources of the planet at a given level of technology. (a) The minimum (b) The maximum (c) All of the above (d) Half of the</p>
+                <p class="answer">Ans. (b) The maximum.</p>
+            </div>
+            <!-- Question 38 -->
+            <div class="question">
+                <p>38. Which of the following is not a green house gas? (a) Carbon dioxide (b) Methane (c) Ozone (d) Chlorine</p>
+                <p class="answer">Ans. (c) Ozone.</p>
+            </div>
+            <!-- Question 39 -->
+            <div class="question">
+                <p>39. Which of the following is not related to climate change? (a) UNFCC (b) IPCC (c) Kyoto Protocol (d) Montreal Protocol</p>
+                <p class="answer">Ans. (d) Montreal Protocol.</p>
+            </div>
+            <!-- Question 40 -->
+            <div class="question">
+                <p>40. The ozone layer is present in which of the following ranges of the atmosphere? (a) 0–10 km (b) 15–50 km (c) 60–70 km (d) 65–90 km</p>
+                <p class="answer">Ans. (c) 15–50 km.</p>
+            </div>
+            <!-- Question 41 -->
+            <div class="question">
+                <p>41. The pH of rainfall was measured to be as per the following at four places A, B, C and D. Which place had the acid deposition? (a) A – 5.5 (b) B – 6.2 (c) C – 6.5 (d) D – 6.9</p>
+                <p class="answer">Ans. (a) A – 5.5.</p>
+            </div>
+            <!-- Question 42 -->
+            <div class="question">
+                <p>42. Which of the following chemicals is responsible for ozone depletion? (a) Sulphur oxides (b) Carbon monoxide (c) Chlorofluorocarbons (d) Nitrogen oxide</p>
+                <p class="answer">Ans. (c) Chlorofluorocarbons.</p>
+            </div>
+            <!-- Question 43 -->
+            <div class="question">
+                <p>43. Which of the following animals excretes very concentrated urine? (a) Camel (b) Garden lizard (c) Nocturnal Rodents (d) Snakes</p>
+                <p class="answer">Ans. (c) Nocturnal Rodents.</p>
+            </div>
+            <!-- Question 44 -->
+            <div class="question">
+                <p>44. Which of the following is an example of non-point source of pollution? (a) Run-offs from agricultural fields (b) Emissions from a power plant (c) Discharge of effluent waste water from a factory (d) Municipal waste water discharged in a river</p>
+                <p class="answer">Ans. (a) Run-offs from agricultural fields.</p>
+            </div>
+            <!-- Question 45 -->
+            <div class="question">
+                <p>45. When was The Air (Prevention and Control of Pollution) Act enacted? (a) 1974 (b) 1986 (c) 1981 (d) 1987</p>
+                <p class="answer">Ans. (c) 1981.</p>
+            </div>
+            <!-- Question 46 -->
+            <div class="question">
+                <p>46. The main objective of UNFCC relates to: (a) Green house gases (b) Ozone depleting substances (c) Biological diversity (d) Chemical and Hazardous wastes</p>
+                <p class="answer">Ans. (a) Green house gases.</p>
+            </div>
+            <!-- Question 47 -->
+            <div class="question">
+                <p>47. Which is not a waste minimisation method? (a) Process modification (b) Waste concentration (c) Waste segregation (d) Landfill</p>
+                <p class="answer">Ans. (d) Landfill.</p>
+            </div>
+            <!-- Question 48 -->
+            <div class="question">
+                <p>48. Which is the best method for disposal of hospital and toxic wastes? (a) Incineration (b) Dumping at sea (c) Landfill (d) Recycling</p>
+                <p class="answer">Ans. (c) Landfill.</p>
+            </div>
+            <!-- Question 49 -->
+            <div class="question">
+                <p>49. Which method is commonly used to assess the presence of organisms in a water body? (a) MPN (b) DO (c) TDS (d) COD</p>
+                <p class="answer">Ans. (a) MPN.</p>
+            </div>
+            <!-- Question 50 -->
+            <div class="question">
+                <p>50. NBA has been set up under the: (a) The Wildlife (Protection), Act (b) The Forest (Conservation), Act (c) The Biological Diversity, Act (d) The Environment (Protection), Act</p>
+                <p class="answer">Ans. (c) The Biological Diversity Act.</p>
+            </div>
+            <!-- Question 51 -->
+            <div class="question">
+                <p>51. In an ecotone, the species which become abundant are called: a. Edge species b. Keystone species c. Endemic species d. Foster species</p>
+                <p class="answer">Ans. a</p>
+            </div>
+            <!-- Question 52 -->
+            <div class="question">
+                <p>52. The objective of Environment studies is a. Raise consciousness about environment conditions b. To teach environmentally appropriate behaviour c. Create an environmental ethic sensitive society d. All of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 53 -->
+            <div class="question">
+                <p>53. Which of the following is not influenced by human activities? a. Destruction of mangroves and wetlands b. Depletion of ground water c. Increased extinction rate of species d. None of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 54 -->
+            <div class="question">
+                <p>54. Which of the following is management option for air pollution? a. Regulations and standards b. Transport planning c. Using CNG as fuel d. All of these</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 55 -->
+            <div class="question">
+                <p>55. Development activities on the hydrosphere cause a. Air pollution b. Soil pollution c. Water pollution d. Soil erosion</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 56 -->
+            <div class="question">
+                <p>56. The species restricted to be present in one region are called a. Edge species b. Endemic species c. Endangered species d. Keystone species</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 57 -->
+            <div class="question">
+                <p>57. The basic requirements of human beings are provided by a. Industrialisation b. Agriculture c. Nature d. Urbanisation</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 58 -->
+            <div class="question">
+                <p>58. Environment is the life support system that includes a. Air b. Water c. Land d. All of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 59 -->
+            <div class="question">
+                <p>59. The term ‘Environment’ has been derived from the French word which means to encircle or surround a. Environ b. Oikos c. Geo d. Aqua</p>
+                <p class="answer">Ans. a</p>
+            </div>
+            <!-- Question 60 -->
+            <div class="question">
+                <p>60. Biosphere is a. The solid shell of inorganic materials on the surface of the earth b. The thin shell of organic matter on the surface of the earth comprising of all the living things c. The sphere which occupies the maximum volume of all the spheres d. All the above</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 61 -->
+            <div class="question">
+                <p>61. Atmosphere consists of 79 percent Nitrogen and 21 percent Oxygen by a. Volume b. Weight c. Density d. All of these</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 62 -->
+            <div class="question">
+                <p>62. The word ‘Environment’ is derived from a. Greek b. French c. Spanish d. English</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 63 -->
+            <div class="question">
+                <p>63. Which among the following is a climatic factor? a. pressure b. humidity c. temperature d. all of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 64 -->
+            <div class="question">
+                <p>64. World environment day is on: a. 5th May b. 5th June c. 18th July d. 16th August</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 65 -->
+            <div class="question">
+                <p>65. Which of the following are major environmental issues involved in mining? a. air pollution b. water pollution c. soil degradation d. all of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 66 -->
+            <div class="question">
+                <p>66. Sustainable development means a. meeting present needs without compromising on future needs b. progress of human beings c. balance between human needs and the ability of earth to provide the resources d. all of the above</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 67 -->
+            <div class="question">
+                <p>67. The most important remedy to avoid negative impact due to industrialisation is a. industry should be closed b. don’t allow new industrial units c. industry should treat all the wastes generated by it before disposal d. industries should be shifted far away from human habitats</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 68 -->
+            <div class="question">
+                <p>68. Sustainable development will not aim at a. Social economic development which optimizes the economic and social benefits available in the present, without spoiling the likely potential for similar benefits in the future b. Reasonable and equally distributed level of economic well being that can be perpetuated continually c. Development that meets the needs of the present without compromising the needs of future generations to meet their own needs d. Maximising the present day benefits through increased resource consumption</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 69 -->
+            <div class="question">
+                <p>69. The adverse effect of modern agriculture is a. Water pollution b. Soil degradation c. Water logging d. All of the above</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 70 -->
+            <div class="question">
+                <p>70. Soil erosion removes surface soil which contains a. Organic matter b. Plant nutrients c. Both a and b d. none of the above</p>
+                <p class="answer">Ans. a</p>
+            </div>
+            <!-- Question 71 -->
+            <div class="question">
+                <p>71. Water logging is a phenomenon in which a. Crop patterns are rotated b. Soil root zone becomes saturated due to over irrigation c. Erosion of soil d. None of the above</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 72 -->
+            <div class="question">
+                <p>72. The impact of construction of dams a. Submerged forest b. Loss of wild life habitat c. Damages downstream ecosystem d. All of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 73 -->
+            <div class="question">
+                <p>73. What would you do to prevent environmental damage a. Plant trees b. Halt deforestation c. Control pollution d. All of the above</p>
+                <p class="answer">Ans. d</p>
+            </div>
+            <!-- Question 74 -->
+            <div class="question">
+                <p>74. Environmental impact assessment a. is the study of feasibility of a project b. is a study of bio-physical characteristics of the environment that may result from a human action c. Both a and b d. None of the above</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 75 -->
+            <div class="question">
+                <p>75. Which of the following is the most environmental friendly agricultural practice? a. Using chemical fertilizers b. Using insecticides c. Organic farming d. None of the above</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 76 -->
+            <div class="question">
+                <p>76. A herbivore is also known as a a. Producer b. First order consumer c. Second order consumer. d. Third order consumer</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 77 -->
+            <div class="question">
+                <p>77. A product of photosynthesis is a. Carbon dioxide b. Water c. Oxygen d. Chlorophyll</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 78 -->
+            <div class="question">
+                <p>78. Primary source of energy in a food web Is/are a. Green plants b. Sun c. Inorganic nutrients d. Animals</p>
+                <p class="answer">Ans. b</p>
+            </div>
+            <!-- Question 79 -->
+            <div class="question">
+                <p>79. A group of living organisms of the same kind living in the same place and at the same time refers to a a. Community b. Species c. Population d. Consumers</p>
+                <p class="answer">Ans. c</p>
+            </div>
+            <!-- Question 80 -->
+            <div class="question">
+                <p>80. Which of these organisms has a diet consisting only of plant matter a. Omnivores b. Carnivores c. Herbivores d. Insectivores</p>
+                <p class="answer">Ans. c</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;robiii🥰🥰.</p>
+    </footer>
+</body>
+</html>
